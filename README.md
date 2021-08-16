@@ -4,6 +4,8 @@ This contains my live project at The Tech Academy
 ## Introduction
 This was a two week sprint for a Theatre Company in Portland OR. I was tasked at first to create a JSON file and having it deserialized in the sitesettings class. The stories following were to create a Cast Members CRUD where a cast member could be created, deleted, or edited. 
 
+*Due to this being a team collaboration and doing work for a company not all code can be shared. I have included some of what I was able to complete in my 2 week sprint.
+
 ### JSON Deserializer
 The first story to get me introduced into the project was to create a Json file that simply had the footer as "Copyright" with a value of 2021. This would be added as a footer on all pages and could add more information later on.
 This is the deserializer code:
