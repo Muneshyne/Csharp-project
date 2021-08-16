@@ -1,0 +1,23 @@
+ public ActionResult Index()
+        {
+            //IQueryable<CastMemberViewModel> productionGroup = from castMember in db.CastMembers
+            //                                                  group castMember
+            //                by castMember.ProductionTitle into productions
+            //                                                  select new CastMemberViewModel()
+            //                                                  {
+            //                                                      ProductionTitle = productions.Key
+            //                                                  };
+            //return View(productionGroup.ToList());
+
+            var listCast = new List<CastMemberViewModel>();
+            listCast = db.CastMembers.ToList().Select(c => new CastMemberViewModel
+            {
+                CastMemberId = c.CastMemberId,
+                Name = c.Name,
+                ProductionTitle = c.ProductionTitle
+            }).ToList();
+
+            var castList = listCast.Where(c => c.ProductionTitle.StartsWith("W"));
+            
+            return View(castList);
+        }
