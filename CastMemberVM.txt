@@ -1,6 +1,0 @@
-    public class CastMemberViewModel
-    {
-        public int CastMemberId { get; set; }
-        public string Name { get; set; } //CastMember
-        public string ProductionTitle { get; set; } //Production
-    }
