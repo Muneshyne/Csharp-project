@@ -1,5 +1,5 @@
 # Csharp-project
-This contains my live project at The Tech Academy
+
 
 ## Introduction
 This was a two week sprint for a Theatre Company in Portland OR. I was tasked at first to create a JSON file and having it deserialized in the sitesettings class. The stories following were to create a Cast Members CRUD where a cast member could be created, deleted, or edited. 
